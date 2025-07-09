@@ -13,11 +13,23 @@
     height: 500px;
     margin: 0 auto; */
 }
+.ff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     padding: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 @media (max-width: 768px) {
     .card {
@@ -29,4 +41,15 @@ img{
         width: 100px;
         height: 100px;
     }
+}
+.ttt{
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        border: 1px solid #333;
+        padding: 8px;
+        text-align: center;
+      }
 }
