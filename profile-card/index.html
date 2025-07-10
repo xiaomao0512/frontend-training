@@ -17,65 +17,67 @@
   </header>
 
   <main class="container mt-4">
-    <section>
-      <h2>我會的技能（ul 無順序清單）</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Bootstrap</li>
-        <li>Git</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>我的學習步驟（ol 有序清單）</h2>
-      <ol>
-        <li>打開 VS Code</li>
-        <li>寫 HTML + CSS</li>
-        <li>用 Live Server 預覽</li>
-        <li>Push 到 GitHub</li>
-      </ol>
-    </section>
-
-    <section class="my-4">
-      <h2>💬 留言板表單</h2>
-      <form>
-        <div class="mb-3">
-          <label for="name">姓名</label>
-          <input type="text" id="name" name="name" placeholder="請輸入姓名" class="form-control" />
-        </div>
-        <div class="mb-3">
-          <label for="message">留言</label>
-          <textarea id="message" name="message" placeholder="請輸入留言" class="form-control"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">送出</button>
-      </form>
-    </section>
-
-    <section class="my-4">
-      <h2>📅 學習進度表</h2>
-      <table class="table table-bordered text-center" style="width: 80%;">
-        <thead>
-          <tr>
-            <th>週次</th>
-            <th>主題</th>
-            <th>完成狀態</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>W1</td>
-            <td>HTML + CSS</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td>W2</td>
-            <td>Vue 基礎</td>
-            <td>⏳</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <div class="flex-container">
+      <section>
+        <h2>我會的技能（ul 無順序清單）</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>Git</li>
+        </ul>
+      </section>
+  
+      <section>
+        <h2>我的學習步驟（ol 有序清單）</h2>
+        <ol>
+          <li>打開 VS Code</li>
+          <li>寫 HTML + CSS</li>
+          <li>用 Live Server 預覽</li>
+          <li>Push 到 GitHub</li>
+        </ol>
+      </section>
+  
+      <section class="my-4">
+        <h2>💬 留言板表單</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name">姓名</label>
+            <input type="text" id="name" name="name" placeholder="請輸入姓名" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label for="message">留言</label>
+            <textarea id="message" name="message" placeholder="請輸入留言" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">送出</button>
+        </form>
+      </section>
+  
+      <section class="my-4">
+        <h2>📅 學習進度表</h2>
+        <table class="table table-bordered text-center" style="width: 80%;">
+          <thead>
+            <tr>
+              <th>週次</th>
+              <th>主題</th>
+              <th>完成狀態</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>W1</td>
+              <td>HTML + CSS</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>W2</td>
+              <td>Vue 基礎</td>
+              <td>⏳</td>
+            </tr>
+          </tbody>
+        </table>
+      </section> 
+    </div>
   </main>
 
   <aside class="container my-4">

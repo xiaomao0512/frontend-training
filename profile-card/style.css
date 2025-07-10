@@ -53,3 +53,10 @@ img{
         text-align: center;
       }
 }
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   margin: 10px;
+}
