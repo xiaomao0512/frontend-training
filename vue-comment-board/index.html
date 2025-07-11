@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vue 留言板</title>
+  <script src="https://unpkg.com/vue@3"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      background: #f7f7f7;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+    }
+    .comment {
+      background: #fff;
+      padding: 12px;
+      margin-top: 12px;
+      border-left: 4px solid #42b983;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>📝 Vue 留言板</h1>
+
+    <input type="text" v-model="name" placeholder="你的名字">
+    <textarea v-model="message" placeholder="寫下留言"></textarea>
+    <button @click="submitComment">送出留言</button>
+
+    <p v-if="comments.length === 0">目前沒有留言。</p>
+
+    <div v-for="(comment, index) in comments" :key="index" class="comment">
+      <strong>{{ comment.name }}</strong>：{{ comment.message }}
+    </div>
+  </div>
+
+  <script>
+    Vue.createApp({
+      data() {
+        return {
+          name: '',
+          message: '',
+          comments: []
+        }
+      },
+      methods: {
+        submitComment() {
+          if (this.name && this.message) {
+            this.comments.push({
+              name: this.name,
+              message: this.message
+            });
+            this.name = '';
+            this.message = '';
+          } else {
+            alert('請填寫名字和留言！');
+          }
+        }
+      }
+    }).mount('#app')
+  </script>
+</body>
+</html>
