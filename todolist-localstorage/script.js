@@ -20,6 +20,19 @@ addBtn.addEventListener("click", () => {
   }
 });
 
+input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      const task = input.value.trim();
+      if (task !== "") {
+        todos.push(task);
+        input.value = "";
+        save();
+        render();
+      }
+    }
+  });
+  
+
 // 渲染畫面
 function render() {
   list.innerHTML = ""; // 清空舊任務
