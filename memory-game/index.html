@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記憶翻牌遊戲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 記憶翻牌遊戲</h1>
+        
+        <div class="game-info">
+            <div class="score">步數: <span id="moves">0</span></div>
+            <div class="timer">時間: <span id="time">00:00</span></div>
+            <button id="reset-btn">重新開始</button>
+        </div>
+        
+        <div class="game-board" id="game-board">
+            <!-- 卡片將由 JavaScript 動態生成 -->
+        </div>
+        
+        <div class="win-message" id="win-message">
+            <h2>🎉 恭喜！你贏了！</h2>
+            <p>總步數: <span id="final-moves">0</span></p>
+            <p>總時間: <span id="final-time">00:00</span></p>
+            <button id="play-again-btn">再玩一次</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
